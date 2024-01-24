@@ -1,0 +1,40 @@
+.w-50{
+    width: 50%;
+}
+.br-18{
+    border-radius: 18px;
+}
+.shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.w-100{
+    width: 100%;
+}
+.m-auto{
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.link{
+    color: rgb(23, 119, 138);
+}
+#featured{
+    color: rgb(194, 73, 3);
+}
+.separatore{
+    border-top: 1px solid;
+    color: rgb(4, 189, 171);
+}
+#linea-verticale{
+    padding-left: 1%;
+    border-left: 1px solid;
+    color: rgb(209, 188, 0);
+}
+#barra{
+    border-top: 2px solid #ffb93646;
+    background-color: rgba(255, 247, 0, 0.148);
+}
+#make{
+    font-weight: bold;
+}
