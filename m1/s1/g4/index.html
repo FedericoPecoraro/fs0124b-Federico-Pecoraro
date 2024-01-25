@@ -16,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
   </head>
+
+
   <body>
-    <header>
+    <header class="header">
       <div>
         <img
           src="./img/logo.svg"
@@ -25,42 +27,38 @@
           width="250"
           height="60"
         />
-        <p>Epicode - Il blog dei developers</p>
+        <p class="white">Epicode - Il blog dei developers</p>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html" title="Home Page">Home</a></li>
-          <li>
-            <a
-              href="articoli.html"
-              title="Elenco degli articoli tecnici pubblicati"
-              >Articoli</a
-            >
+          <li class="nav"><a href="#" title="Home Page">⇒Home⇐</a></li>
+          <li class="nav"><a href="#" title="Elenco degli articoli tecnici pubblicati">⇒Articoli⇐</a>
           </li>
-          <li>
-            <a href="contatti.html" title="Candidati inviando un tuo cv">Job</a>
+          <li class="nav">
+            <a href="#" title="Candidati inviando un tuo cv">⇒Lavora con noi⇐</a>
           </li>
         </ul>
       </nav>
     </header>
-    <hr />
-    <main>
+    
+    <main class="main">
       <article>
         <h1>Come creare un template per i post</h1>
-        <p>di Mario Rossi - <span>pubblicato il 25-10-2020</span></p>
-        <p>
+        <p class="article"><i class="fas fa-pen-square"></i>di Mario Rossi -
+          <span class="article"><i class="fas fa-clock"></i>pubblicato il 25-10-2020</span></p>
+        <p class="margin">
           La prima cosa da fare è suddividere in blocchi logici la pagina,
           identificando le <strong>parti comuni</strong> da applicare a tutte le
           pagine
         </p>
-        <p>Le varie aree saranno quindi suddivise in:</p>
+        <p class="margin">Le varie aree saranno quindi suddivise in:</p>
         <ul>
-          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
-          <li>
+          <li class="margin">Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+          <li class="margin">
             Contenuti centrali variabili del tag
             <code>&lt;main&gt;</code> (corpo principale)
           </li>
-          <li>
+          <li class="margin">
             Contenuti di fine pagina comuni, da inserire nel tag
             <code>&lt;footer&gt;</code>
           </li>

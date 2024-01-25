@@ -1,8 +1,65 @@
 /* IMPOSTAZIONI GENERALI */
-
+body{
+    background-image:url(../img/sfondo.png);
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-size: cover;
+}
 /* HEADER */
+.header{
+    text-align: center;
+    background: rgb(70,155,194);
+    background: linear-gradient(0deg, rgba(70,155,194,1) 0%, rgba(46,105,133,1) 100%);
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.white{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.nav{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+div img{
+    margin: 10px;
+}
 
 /* MAIN */
+.main{
+    background: rgb(255, 255, 255);
+    border: solid 1px black;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.article{
+    color: rgb(186, 186, 186);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fas{
+    margin: 5px;
+}
+strong{
+    color: brown;
+}
+.margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style: circle;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
