@@ -1,0 +1,138 @@
+/* IMPOSTAZIONI GENERALI */
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65rem;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+header {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2em 1.5em;
+}
+
+/* MAIN / ASIDE*/
+.first-block {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 3em;
+    margin-bottom: 2em;
+}
+h1 {
+    padding: 2em 2em 1em 2em;
+    color: #25a2c3;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.first-block p {
+    padding: 0 4em;
+    margin-bottom: 3rem;
+}
+#button {
+    display: inline;
+    background-color: #e22d0e;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    padding:1em 2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3rem;
+}
+.article-title {
+    padding: 0.5em;
+}
+.article-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    padding-top: 1em;
+}
+.article-title p {
+    padding: 1em 3em;
+}
+.img-round {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    padding-bottom: 1em;
+}
+#orange {
+    background-color: #e22d0e;
+    color: #ffffff;
+    margin: 3em 0;
+}
+#orange h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    padding-top: 2em;
+}
+#firstP {
+    font-style: italic;
+    padding: 3rem 0;
+}
+#secP {
+    font-size: 30px;
+    padding-bottom: 1rem;
+
+}
+#thrP {
+    padding-bottom: 3rem;
+}
+.post {
+    padding: 0 0 1.5em 0;
+    margin: 2em 1.5em;
+    border: solid 1px #dee1e3;
+    border-radius: 2px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #25a2c3;
+    margin-top: 4em;
+}
+footer h3 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    padding: 1.5em 0 1em 0;
+}
+
+/* #footer i{ 
+    color: #ffffff;
+    text-decoration: none;
+}
+#footer a{ 
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration-line: underline;
+    padding-bottom: 2em;
+}
+#footer p{ 
+    color: #ffffff;
+    padding: 1.5em;
+} */
+#footer {
+    color: #ffffff;
+    padding: 30px 0;
+}
+#footer a {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+footer p {
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+hr {
+    margin: 0 8rem;
+}

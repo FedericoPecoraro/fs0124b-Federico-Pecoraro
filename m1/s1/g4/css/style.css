@@ -1,5 +1,6 @@
 /* IMPOSTAZIONI GENERALI */
 body{
+    font-family: 'Poppins', sans-serif;
     background-image:url(../img/sfondo.png);
     background-repeat: repeat-y;
     background-position-x: center;
@@ -20,9 +21,7 @@ body{
     padding: 10px;
     text-transform: uppercase;
 }
-.nav{
-    margin-top: 5px;
-    margin-bottom: 5px;
+.nav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
