@@ -60,13 +60,13 @@ console.log(x - 4);
 */
 
 let name1 = 'john'
-let name2 = 'John'
+let name2 = 'Jhn'
 console.log(name1 !== name2);
 //OPPURE
 console.log(name1 == name2);
 
 /* EXTRA */
-if (name1.toLowerCase() === name2.toLowerCase()) {
+if (name1 === name2.toLowerCase()) {
     console.log("true");
 } else {
     console.log("false");
