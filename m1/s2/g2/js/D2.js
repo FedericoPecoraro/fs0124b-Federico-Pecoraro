@@ -6,9 +6,11 @@
   let n2 = 69
 
   if (n1 < n2) {
-    console.log(n2);
+    console.log(n2, 'è il più grande');
+  } else if (n1 > n2) {
+    console.log(n1, 'è il più grande');
   } else {
-    console.log(n1);
+    console.log(n1, 'e', n2, 'sono uguali');
   }
 }
 
@@ -67,6 +69,7 @@
     console.log(totalShoppingCart);
   }
 }
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
