@@ -34,14 +34,14 @@ console.log(crazySum(5,5));
 }
 console.log(crazyDiff(200,2));*/
 
-function crazyDiff(a,b) {
-    if (b > 19) {
-        return ((a / b)* 3);
+function crazyDiff(a) {
+    if (a > 19) {
+        return ((a - 19)* 3);
     } else {
-        return a / b
+        return (a - 19)
     }
 }
-console.log(crazyDiff(19,20));
+console.log(crazyDiff(8));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -50,7 +50,7 @@ console.log(crazyDiff(19,20));
 function boundary(a) {
     if (a === 400) {
         return (true)
-    } else if (a > 20 & a < 100) {
+    } else if (a >= 20 & a <= 100) {
         return (true)
     } else {
         return (false)
@@ -70,7 +70,7 @@ function epify(a,b) {
         return (a + b)
     }
 }
-console.log(epify('EPICODE ','EPICODE'));
+console.log(epify('EPICODE ','cane'));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -97,10 +97,10 @@ console.log(reverseString('EPICODE'));
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
-let upperFirst = (a) => {
-    return (a.split(' '))
+function upperFirst(stringa) {
+    let parole = stringa.split(' ');
 }
-console.log(upperFirst('ciao mi chiamo federico'));
+console.log( upperFirst('ciao mi chiamo federico'));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere

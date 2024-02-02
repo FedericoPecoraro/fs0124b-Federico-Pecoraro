@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edee ;
+}
+img {
+    max-width: 100%;
+}
+.amazonBar {
+    background-color: #222f3f ;
+}
+.amazonBar img {
+    width: 8em;
+    height: auto;
+    padding: 0.5em;
+}
+.nav {
+    background-color: #364757;
+}
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.5em;
+    line-height: 1.65em;
+}
+.orange {
+    background-color: #f56600;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.4em;
+    margin: 1.5em 1.5em 0 1.5em;
+}
+.gift {
+    background-image: url(../images/bg-image.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em;
+    margin: 1.5em;
+}
+.gift h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.gift p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 1em;
+}
+.button {
+    display: inline;
+    color: #31828d;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+.white {
+    background-color: #ffffff ;
+    margin: 0.5em 1.5em;
+}
+.text {
+    padding: 1em;
+}
+.text h2{
+    font-weight: bold;
+    display: inline;
+    padding-right: 0.5em;
+}
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 1em;
+}
+.images img {
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+    width: auto;
+    height: 12em;
+    margin: 0.5em;
+    object-fit: cover;
+}
+.article {
+    text-align: center;
+    padding: 0.4em;
+    margin: 1em;
+}
+.article h2 {
+    font-weight: bold;
+    display: inline;
+    padding-right: 0.5em;
+}
+#back {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.footer {
+    background-color: #364757;
+    text-align: center;
+    padding: 0.3em;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.65em;
+}
+.amazonFooter {
+    background-color: #222f3f;
+    text-align: center;
+}
+.amazonFooter img {
+    width: 10em;
+    height: auto;
+    padding: 2.5em;
+}
