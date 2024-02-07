@@ -75,7 +75,14 @@
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 {
+  let totalShoppingCart = 30
+  let shipping = 10
   let sale = 20
+  if (totalShoppingCart+sale < 50) {
+    console.log(totalShoppingCart + shipping);
+  } else {
+    console.log(totalShoppingCart);
+  }
 }
 
 /* ESERCIZIO 7
@@ -87,7 +94,19 @@
   let n1 = 8
   let n2 = 30
   let n3 = 15
-
+  if (n1>n2&&n2>n3) {
+    console.log(n1,n2,n3);
+  } else if (n1>n3&&n3>n2) {
+    console.log(n1,n3,n2);
+  } else if (n2>n1&&n1>n3) {
+    console.log(n2,n1,n3);
+  } else if (n2>n3&&n3>n1) {
+    console.log(n2,n3,n1);
+  } else if (n3>n1&&n1>n2) {
+    console.log(n3,n1,n2);
+  } else if (n3>n2&&n2>n1) {
+    console.log(n3,n2,n1);
+  }
 }
 
 /* ESERCIZIO 8
