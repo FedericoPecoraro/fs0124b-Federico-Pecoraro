@@ -1,0 +1,59 @@
+/****************************************************************
+* Tipografia o stili generici 
+*/
+html {
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.number{
+    font-size: 1.3em;
+}
+
+.btn{
+    background-color:rgb(1, 112, 132);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/****************************************************************
+* box 
+*/
+
+.tombolaBox{
+    font-family: 'Roboto', sans-serif;
+    width: 800px;
+    background-color:rgb(5, 83, 96);
+    color: #fff;
+    padding: 5px 10px 30px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.number-box{
+    background-color:rgb(1, 112, 132);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/****************************************************************
+* numeri
+*/
+.number{
+    flex: 0 1 10%;
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 45%;
+}
+.called-number{
+    background-color: rgb(255, 106, 0);
+}
