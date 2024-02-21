@@ -1,0 +1,25 @@
+body {
+    margin: 30px;
+}
+
+
+.container-navbar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #742305;
+    background-color: #fef7e2;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+.navButton {
+    text-decoration: none;
+    color: #742305;
+    background-color: #ffdf7f;
+    border-radius: 30px;
+    padding: 1rem 1.3rem;
+    text-align: center;
+}
+.beeLogo {
+    padding-right: 2em;
+}

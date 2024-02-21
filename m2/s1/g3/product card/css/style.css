@@ -1,0 +1,21 @@
+body {
+    padding: 20px;
+}
+
+.container-card {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #742305;
+    background-color: #fef7e2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.addButton {
+    text-decoration: none;
+    color: #742305;
+    background-color: #ffdf7f;
+    border-radius: 30px;
+    padding: 1rem 1.3rem;
+    text-align: center;
+}
