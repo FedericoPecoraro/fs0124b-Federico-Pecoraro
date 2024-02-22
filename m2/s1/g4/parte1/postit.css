@@ -1,0 +1,85 @@
+body {
+    background-color: #666666;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 70rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    padding-top: 10rem;
+    perspective: 400px;
+    transform-style: preserve-3d;
+}
+
+div h2 {
+    font-weight: bold;
+}
+
+.Giallo {
+    width: 250px;
+    height: 200px;
+    background: rgb(254,254,205);
+    background: linear-gradient(180deg, rgba(254,254,205,1) 70%, rgba(128,128,113,1) 100%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotatez(-4deg);
+    animation-name: arrive;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.Verde {
+    width: 250px;
+    height: 200px;
+    background: rgb(203,253,205);
+    background: linear-gradient(180deg, rgba(203,253,205,1) 69%, rgba(113,126,114,1) 100%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotatez(7deg);
+    animation-name: arrive;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+.Viola {
+    width: 250px;
+    height: 200px;
+    background: rgb(201,201,247);
+    background: linear-gradient(180deg, rgba(201,201,247,1) 71%, rgba(98,99,111,1) 100%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotatez(-8deg);
+    animation-name: arrive;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+}
+
+.postit:hover {
+    transform: rotateZ(0) scale(1.2,1.2);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.postit {
+    transition-duration: 0.3s;
+}
+
+@keyframes arrive {
+    from {transform: scale(100,100) rotate(30deg);} 
+}
