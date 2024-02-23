@@ -81,5 +81,5 @@ div h2 {
 }
 
 @keyframes arrive {
-    from {transform: scale(100,100) rotate(30deg);} 
+    from {transform: translateZ(400px) rotate(30deg);} 
 }

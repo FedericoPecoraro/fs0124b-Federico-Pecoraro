@@ -1,0 +1,242 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    height: 4.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 1.5%;
+}
+.nav-buttons-div {
+  width: 30em;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-buttons {
+    text-decoration: none;
+    color: #191919;
+}
+.get-started-button {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
+  background-color: #191919;
+  width: 7rem;
+  height: 1.7rem;
+  border-radius: 40px;
+}
+
+.get-started-button:hover, .start-reading-button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* MAIN */
+.top-div {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  height: 28.5rem;
+  padding-left: 18%;
+}
+.h1-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 47px;
+}
+#h1 {
+  font-family: "Spectral", serif;
+  font-weight: bold;
+  font-size: 100px;
+}
+.p-top {
+  font-size: 22px;
+  width: 25rem;
+}
+.start-reading-button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 12px;
+  color: white;
+  background-color: #191919;
+  width: 13rem;
+  height: 2rem;
+  border-radius: 40px;
+}
+
+/* ELEMENTI NELL'ARTICLE */
+article {
+  padding-top: 40px;
+  padding-left: 18%;
+}
+.trending-div {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  font-weight: bold;
+}
+.articles-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 80%;
+}
+.articles {
+  display: flex;
+  gap: 20px;
+  width: 24rem;
+}
+.single-article {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.number {
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.1;
+}
+.article-img-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.article-img {
+  width: 20px;
+  height: auto;
+}
+.article-name {
+  text-decoration: none;
+  color: #191919;
+  font-size: 14px;
+}
+.article-title {
+  text-decoration: none;
+  color: #191919;
+  font-weight: bold;
+}
+.article-data {
+  font-size: 14px;
+  color: gray;
+}
+.hr {
+  margin: 50px 0;
+  opacity: 0.2;
+}
+
+/* ELEMENTI NEL SECTION */
+.main {
+  display: flex;
+}
+section {
+  padding-left: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  gap: 50px;
+}
+.article-div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.section-title {
+  text-decoration: none;
+  font-size: 22px;
+  color: #191919;
+  font-weight: bold;
+}
+.article-content {
+  text-decoration: none;
+  color: gray;
+}
+.img-section {
+  width: 200px;
+  height: auto;
+}
+.under-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.light-button {
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 16px;
+  color: #707070;
+  background-color: rgba(231, 228, 228, 0.637);
+  border-radius: 40px;
+}
+.bookmark {
+  opacity: 0.6;
+}
+
+/* ASIDE E FOOTER */
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 25rem;
+  padding-left: 20px;
+  position: sticky;
+  top: 110px;
+}
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 20px 0;
+}
+.link-button {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #191919;
+  background-color: rgba(231, 228, 228, 0.637);
+  border-radius: 40px;
+}
+.topics {
+  text-decoration: none;
+  color: #1a8917;
+  font-size: 14px;
+}
+hr {
+  margin: 30px 0;
+  opacity: 0.2;
+}
+.grey-text-div {
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.grey-text {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+}
