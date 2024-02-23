@@ -18,6 +18,8 @@ header {
     align-items: center;
     font-size: 15px;
     padding-left: 1.5%;
+    transition-property: background-color;
+    transition-duration: 0.8s;
 }
 .nav-buttons-div {
   width: 30em;
@@ -39,6 +41,8 @@ header {
   width: 7rem;
   height: 1.7rem;
   border-radius: 40px;
+  transition-property: background-color;
+  transition-duration: 0.8s;
 }
 
 .get-started-button:hover, .start-reading-button:hover {
@@ -155,6 +159,7 @@ section {
   justify-content: space-between;
   width: 40%;
   gap: 50px;
+  padding-bottom: 70px;
 }
 .article-div {
   width: 90%;
@@ -193,6 +198,9 @@ section {
 }
 .bookmark {
   opacity: 0.6;
+}
+.bookmark:hover {
+  opacity: 1;
 }
 
 /* ASIDE E FOOTER */
