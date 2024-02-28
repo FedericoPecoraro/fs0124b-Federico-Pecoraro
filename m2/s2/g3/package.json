@@ -1,0 +1,11 @@
+{
+  "name": "g3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "autosave": "sass scss/style.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

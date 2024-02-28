@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'animazioni';
+@import 'bottoni';
+@import 'colori';
+@import 'font';
+@import 'mixins';
+@import 'spaziature';
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3em 10%;
+    position: sticky;
+    top: 0;
+}
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8em 10% 0 10%;
+    margin-bottom: 6em;
+}
+.headings {
+    width: 27rem;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: rgb(16, 0, 34);
+}
+#description {
+    font-weight: bold;
+    font-size: 55px;
+}
+.text {
+    color: #f4f4f4;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+#img {
+    position: relative;
+    top: 70px;
+    border-radius: 3%;
+    border: 1px solid purple;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3% 10%;
+    gap: 10px;
+}
+.imgMini {
+    border-radius: 5%;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+}
