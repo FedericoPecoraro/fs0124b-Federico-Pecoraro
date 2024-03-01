@@ -1,7 +1,13 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'general';
-@import 'header';
-@import 'main';
-@import 'footer';
+@import './home/general';
+@import './home/header';
+@import './home/main';
+@import './home/footer';
+@import './profile/general-profile';
+@import './profile/header-profile';
+@import './profile/main-profile';
+@import './profile/footer-profile';
+@import 'mixins';
+@import 'variables';
 
-
+//Il CSS Personalizzato si trova all'interno dei Parcels specifici.

@@ -4,12 +4,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/assets/netflix_logo.png" width="80rem" alt="#"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">My List</a>
+                    </li>
 
+                </ul>
+                <div class="d-flex mt-2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a href="#"><i class="bi bi-search text-light"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <p class="text-light">KIDS</p>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#"><i class="bi bi-bell-fill text-light"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="http://127.0.0.1:5500/profile.html"><img src="./assets/assets/kids_icon.png"
+                                    width="25rem" alt="kids"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar navbar-expand bg-dark">
+        <div class="container-fluid">
+            <h3 class="text-light mx-2">TV Shows</h3>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light mx-3 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex mt-2">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="bi bi-list icon-line"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <i class="bi bi-grid-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-fluid bg-dark">
+
+        <div class="container-fluid">
+            <h5 class="text-light">Trending Now</h5>
+            <div class="container-fluid row gx-0">
+                <div>
+                    <i class="arrow arrL1 text-secondary bi-caret-left-fill position-absolute"></i>
+                </div>
+                <img src="./assets/assets/media/media0.webp" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media1.jpg"
+                    class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" width="190rem" alt="">
+                <img src="./assets/assets/media/media2.webp" class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media3.webp" class="col-lg-3 col-xl-2 d-none d-lg-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media4.jpg" class="col-lg-2 col-xl-2 d-none d-xl-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media5.webp" class="col-xl-2 d-none d-xl-block" width="190rem" alt="">
+                <div>
+                    <i class="arrow arrR1 text-secondary bi-caret-right-fill position-absolute"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4">
+            <h5 class="text-light">Watch It Again</h5>
+            <div class="container-fluid row gx-0">
+                <div>
+                    <i class="arrow arrL2 text-secondary bi-caret-left-fill position-absolute"></i>
+                </div>
+                <img src="./assets/assets/media/media6.jpg" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media7.webp"
+                    class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" width="190rem" alt="">
+                <img src="./assets/assets/media/media8.webp" class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media9.jpg" class="col-lg-3 col-xl-2 d-none d-lg-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media10.jpg" class="col-lg-2 col-xl-2 d-none d-xl-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media11.jpg" class="col-xl-2 d-none d-xl-block" width="190rem" alt="">
+                <div>
+                    <i class="arrow arrR2 text-secondary bi-caret-right-fill position-absolute"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4">
+            <h5 class="text-light">New Releases</h5>
+            <div class="container-fluid row gx-0">
+                <div>
+                    <i class="arrow arrL3 text-secondary bi-caret-left-fill position-absolute"></i>
+                </div>
+                <img src="./assets/assets/media/media12.jpg" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media13.jpg"
+                    class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" width="190rem" alt="">
+                <img src="./assets/assets/media/media14.webp" class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block"
+                    width="190rem" alt="">
+                <img src="./assets/assets/media/media15.jpg" class="col-lg-3 col-xl-2 d-none d-lg-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media16.webp" class="col-lg-2 col-xl-2 d-none d-xl-block" width="190rem"
+                    alt="">
+                <img src="./assets/assets/media/media17.jpg" class="col-xl-2 d-none d-xl-block" width="190rem" alt="">
+                <div>
+                    <i class="arrow arrR3 text-secondary bi-caret-right-fill position-absolute"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer col bg-dark container-fluid pt-5">
+
+        <div>
+            <a href="#" class="text-decoration-none mx-2">
+                <i class="bi bi-facebook text-secondary icons"></i>
+            </a>
+            <a href="#" class="text-decoration-none mx-2">
+                <i class="bi bi-instagram text-secondary icons"></i>
+            </a>
+            <a href="#" class="text-decoration-none mx-2">
+                <i class="bi bi-twitter text-secondary icons"></i>
+            </a>
+            <a href="#" class="text-decoration-none mx-2">
+                <i class="bi bi-youtube text-secondary icons"></i>
+            </a>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-3 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Audio and Subtitles</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Media Center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-3 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Audio Description</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Investor Relations</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Legal Notices</a></li>
+                </ul>
+            </div>
+            <div class="col-3 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Help Center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Jobs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Cookie Preferences</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Gift Cards</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Terms of Use</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Corporate Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-outline-secondary">Service Code</button>
+            <p class="text-secondary small pt-3">© 1997-2019 Netflix,inc.{i-0d00fcda2fdf9c0de}</p>
+        </div>
+
+    </footer>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

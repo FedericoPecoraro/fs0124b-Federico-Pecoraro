@@ -1,0 +1,41 @@
+.icon-line {
+    font-size: 18px;
+}
+main {
+    padding-bottom: 50px;
+}
+.arrow {
+    font-size: 40px;
+}
+.arrow:hover {
+    filter: brightness(10);
+}
+.arrR1 {
+    right: 0;
+    top: 6.5em;
+}
+.arrL1 {
+    left: 0;
+    top: 6.5em;
+}
+.arrR2 {
+    right: 0;
+    top: 14.3em;
+}
+.arrL2 {
+    left: 0;
+    top: 14.3em;
+}
+.arrR3 {
+    right: 0;
+    top: 21.6em;
+}
+.arrL3 {
+    left: 0;
+    top: 21.6em;
+}
+@media screen and (min-width: 505px) {
+    .arrow {
+        display: none;
+    }
+}

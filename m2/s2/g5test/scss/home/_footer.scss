@@ -1,0 +1,19 @@
+.icons {
+    font-size: 2rem;
+}
+.footer {
+    padding: 0 20%;
+}
+.bi:hover {
+    filter: brightness(10);
+}
+@media screen and (max-width: 768px){
+    .footer {
+        padding: 0 10%;
+    }
+}
+@media screen and (max-width: 320px){
+    .footer {
+        padding: 0;
+    }
+}
