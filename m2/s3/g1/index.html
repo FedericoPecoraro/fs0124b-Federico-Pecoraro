@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Create Pet</h2>
+
+    <form id="petForm">
+
+        <label for="petName">Pet Name:</label><br>
+        <input type="text" id="petName" name="petName" required><br>
+        
+        <label for="ownerName">Owner Name:</label><br>
+        <input type="text" id="ownerName" name="ownerName" required><br>
+        
+        <label for="species">Species:</label><br>
+        <select id="species" name="species" required>
+            <option value="">Select Species</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Rabbit">Rabbit</option>
+        </select><br>
+        
+        <label for="breed">Breed:</label><br>
+        <input type="text" id="breed" name="breed" required><br><br>
+        
+        <input type="submit" value="Create Pet">
+    </form>
+
+    <script>
+        
+        class Pet {
+            constructor(_petName, _ownerName, _species, _breed) {
+                this.petName = _petName;
+                this.ownerName = _ownerName;
+                this.species = _species;
+                this.breed = _breed
+            }
+            sameOwner(pet2){
+                if (this.ownerName === pet2.ownerName) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+
+        let petName = document.querySelector('#petName');
+        let ownerName = document.querySelector('#ownerName');
+        let species = document.querySelector('#species');
+        let breed = document.querySelector('#breed');
+
+        
+
+
+        class User {
+            constructor(_firstName, _lastName, _age, _location) {
+                this.firstName = _firstName;
+                this.lastName = _lastName;
+                this.age = _age;
+                this.location = _location
+            }
+
+            ageComparison(user2) {
+                if (this.age > user2.age) {
+                    return `${this.firstName} è più grande di ${user2.firstName}` ;
+                } else if (this.age < user2.age) {
+                    return`${this.firstName} è più piccolo di ${user2.firstName} ma non è assolutamente un problema`;
+                } else {
+                    return`${this.firstName} e ${user2.firstName} hanno la stessa età`;
+                }
+            }
+        }
+
+        let tizio = new User ('Dario', 'Cantini', 22, 'Toscana');
+        let caio = new User ('Martina', 'Autore', 28, 'Sicilia');
+
+        console.log(tizio.ageComparison(caio));
+
+    </script>
+</body>
+
+</html>
