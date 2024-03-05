@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 id="text"></h2>
+
+    <form id="userForm">
+
+        <input type="text" id="userName" name="userName" placeholder="scrivi il tuo nome.."><br>
+        <button id="createBtn">Crea</button>
+        <button id="deleteBtn">Rimuovi</button>
+
+    </form>
+
+    <script>
+
+        let text = document.querySelector('#text');
+        let input = document.querySelector('#userName');
+        let createBtn = document.querySelector('#createBtn');
+        let deleteBtn = document.querySelector('#deleteBtn');
+
+        createBtn.addEventListener('click', () => {
+            const inputText = input.value;
+            localStorage.setItem('createdName', inputText);
+            input.value = '';
+            text.innerHTML = inputText;
+        });
+
+        deleteBtn.addEventListener('click', () => {
+            localStorage.removeItem('removedName');
+            text.innerHTML = '';
+        });
+
+
+    </script>
+</body>
+
+</html>
