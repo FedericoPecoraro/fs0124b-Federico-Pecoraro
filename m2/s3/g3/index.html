@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-cols-4"></div>
+    </div>
+
+
+
+    <script>
+        fetch('https://striveschool-api.herokuapp.com/books')
+            .then(response => response.json())
+            .then(dati => {
+                console.log(dati);
+
+                for (let book of dati) {
+
+                    let div = document.createElement('div')
+                    div.classList.add('card')
+                    div.style.width = '18rem'
+                    let img = document.createElement('img')
+                    img.classList.add('card-img-top')
+                    let body = document.createElement('div')
+                    body.classList.add('card-body')
+                    let title = document.createElement('h5')
+                    title.classList.add('card-title')
+                    let price = document.createElement('p')
+                    price.classList.add('card-text')
+                    let scarta = document.createElement('a')
+                    scarta.classList.add('btn', 'btn-success')
+                    scarta.innerText = 'Scarta'
+
+                    scarta.addEventListener("click", function () {
+                        document.querySelector('.row').removeChild(div)
+                    })
+
+                    body.append(title, price, scarta)
+                    div.append(img, body)
+                    img.src = book.img
+
+                    title.innerText = book.title
+                    price.innerText = book.price
+
+                    document.querySelector('.row').append(div)
+                }
+            })
+    </script>
+</body>
+
+</html>
