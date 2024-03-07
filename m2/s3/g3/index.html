@@ -13,19 +13,15 @@
         <div class="row row-cols-4"></div>
     </div>
 
-
-
     <script>
         fetch('https://striveschool-api.herokuapp.com/books')
             .then(response => response.json())
             .then(dati => {
-                console.log(dati);
 
                 for (let book of dati) {
 
                     let div = document.createElement('div')
                     div.classList.add('card')
-                    div.style.width = '18rem'
                     let img = document.createElement('img')
                     img.classList.add('card-img-top')
                     let body = document.createElement('div')
@@ -34,20 +30,20 @@
                     title.classList.add('card-title')
                     let price = document.createElement('p')
                     price.classList.add('card-text')
-                    let scarta = document.createElement('a')
-                    scarta.classList.add('btn', 'btn-success')
-                    scarta.innerText = 'Scarta'
+                    let button = document.createElement('a')
+                    button.classList.add('btn', 'btn-danger')
 
-                    scarta.addEventListener("click", function () {
+                    img.src = book.img
+                    title.innerText = book.title
+                    price.innerText = book.price
+                    button.innerText = 'Scarta'
+
+                    button.addEventListener("click", function () {
                         document.querySelector('.row').removeChild(div)
                     })
 
-                    body.append(title, price, scarta)
+                    body.append(title, price, button)
                     div.append(img, body)
-                    img.src = book.img
-
-                    title.innerText = book.title
-                    price.innerText = book.price
 
                     document.querySelector('.row').append(div)
                 }
