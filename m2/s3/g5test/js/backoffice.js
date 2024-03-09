@@ -5,10 +5,10 @@ save.addEventListener("click", function (e) {
     let name = document.querySelector("#name").value;
     let brand = document.querySelector("#brand").value;
     let price = document.querySelector("#price").value;
-    let img = document.querySelector("#img").value;
+    let imageUrl = document.querySelector("#img").value;
     let description = document.querySelector("#description").value;
 
-    const product = { name, brand, price, img, description };
+    const product = { name, brand, price, imageUrl, description };
 
     fetch("https://striveschool-api.herokuapp.com/api/product/", {
     method: "POST",
@@ -23,6 +23,6 @@ save.addEventListener("click", function (e) {
     .then((dati) => {
         console.log(dati);
 
-        location.href = "./products.html";
+    location.href = "./products.html";
     });
 });

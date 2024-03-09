@@ -37,6 +37,34 @@
                 <hr>
             </div>
             <div class="row justify-content-center" id="product-details">
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Brand</label>
+                        <input type="text" class="form-control" id="brand" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Prezzo</label>
+                        <input type="number" class="form-control" id="price" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="imgUrl" class="form-label">URL Immagine</label>
+                        <input type="text" class="form-control" id="img" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Descrizione Prodotto</label>
+                        <input type="text" class="form-control" id="description" required />
+                    </div>
+                    <button type="submit" class="saveProduct btn btn-success mt-3">
+                        Salva prodotto
+                    </button>
+                    <button type="submit" class="btn btn-danger mt-3">
+                        Elimina
+                    </button>
+                </form>
             </div>
         </div>
     </main>
