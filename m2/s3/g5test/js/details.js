@@ -14,12 +14,12 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
     let name = document.querySelector('.h5')
     let brand = document.querySelector('.brand')
     let price = document.querySelector('.price')
-    let details = document.querySelector('.details')
+    let description = document.querySelector('.description')
 
     img.src = dati.imageUrl
     name.innerText = dati.name
     brand.innerText = dati.brand
     price.innerText = dati.price
-    details.innerText = dati.details
+    description.innerText = dati.description
 
     })

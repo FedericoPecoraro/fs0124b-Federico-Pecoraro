@@ -34,7 +34,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
         let detailsBtn = document.createElement('a')
         detailsBtn.classList.add('btn', 'btn-primary')
         let editBtn = document.createElement('a')
-        editBtn.classList.add('btn', 'btn-warning')
+        editBtn.classList.add('btn', 'btn-warning', 'ms-2')
 
         name.innerText = product.name
         brand.innerText = product.brand
