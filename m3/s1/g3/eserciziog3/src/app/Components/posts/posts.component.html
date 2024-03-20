@@ -1,0 +1,11 @@
+<div *ngFor="let post of postArr; let id = index" class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-title">{{post.title}}</p>
+    <p class="card-text">{{post.body}}</p>
+    <h5 [innerText]="post.active ? 'Active' : 'Not Active' " class="card-text"></h5>
+    <a href="#" class="card-link btn btn-warning">Read More</a>
+  </div>
+</div>
+
+
+<button class="btn btn-primary" (click)="Dis()">Filtra disponibili</button>
