@@ -20,4 +20,8 @@ export class PostsComponent {
     this.postArr = this.postArr.filter(p => p.active)
   }
 
+  notDis(){
+    this.postArr = this.postArr.filter(p => !p.active)
+  }
+
 }
