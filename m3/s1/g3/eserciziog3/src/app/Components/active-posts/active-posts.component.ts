@@ -3,18 +3,18 @@ import { iPost } from '../../Models/post';
 import { PostServService } from '../../post-serv.service';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.scss'
+  selector: 'app-active-posts',
+  templateUrl: './active-posts.component.html',
+  styleUrl: './active-posts.component.scss'
 })
-export class PostsComponent {
+export class ActivePostsComponent {
   postsArr:iPost[] = [];
 
   constructor(private postSvc:PostServService){}
 
   ngOnInit(){
 
-    this.postSvc.getAllPosts().then(res => {
+    this.postSvc.getActivePosts().then(res => {
 
       this.postsArr = res;
 
