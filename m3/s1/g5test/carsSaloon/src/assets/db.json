@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500L",
@@ -9,6 +10,7 @@
         "available": false
     },
     {
+        "id": "2",
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500 Abarth",
@@ -18,6 +20,7 @@
         "available": true
     },
     {
+        "id": "3",
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
@@ -27,6 +30,7 @@
         "available": false
     },
     {
+        "id": "4",
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Focus",
@@ -36,6 +40,7 @@
         "available": true
     },
     {
+        "id": "5",
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
@@ -45,6 +50,7 @@
         "available": true
     },
     {
+        "id": "6",
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "Q7",

@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FiatComponent } from './components/fiat/fiat.component';
 import { AudiComponent } from './components/audi/audi.component';
 import { FordComponent } from './components/ford/ford.component';
+import { CarDetailComponent } from './components/car-detail/car-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FordComponent } from './components/ford/ford.component';
     FooterComponent,
     FiatComponent,
     AudiComponent,
-    FordComponent
+    FordComponent,
+    CarDetailComponent
   ],
   imports: [
     BrowserModule,

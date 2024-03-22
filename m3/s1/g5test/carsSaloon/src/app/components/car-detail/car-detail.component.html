@@ -1,0 +1,16 @@
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-2">
+      <img [src]="car!.modelImage" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-10" [ngClass]="{'bg-success': car!.available, 'bg-danger': !car!.available}">
+      <div class="card-body">
+        <h5 class="card-title">{{car!.model}}</h5>
+        <p class="card-text">{{car!.brand}}</p>
+        <p class="card-text">Anno: {{car!.year}}</p>
+        <p class="card-text">${{car!.price}}</p>
+        <p class="card-text">{{car!.available ? 'Disponibile' : 'Non Disponibile'}}</p>
+      </div>
+    </div>
+  </div>
+</div>

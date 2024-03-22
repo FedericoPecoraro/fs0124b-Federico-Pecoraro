@@ -50,4 +50,9 @@ export class CarsService {
       this.chosenCars.push(this.randomCars[this.randomIndex()]);
     }
   }
+
+  getCarById(id:string):Promise<Cars | undefined> {
+    return this.getAllCars()
+    .then(res => res.find(p => p.id == id))
+  }
 }

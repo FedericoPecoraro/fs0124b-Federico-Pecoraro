@@ -1,4 +1,11 @@
 <div class="logosDiv">
+  <div class="imgLogo">
+    <img src="../../../assets/logos/logo.png" alt="">
+  </div>
+  <h2>Il Tuo Autosalone Di Fiducia</h2>
+</div>
+
+<div class="logosDiv">
   <h2>I Nostri Marchi</h2>
   <div class="imgDiv">
     <img class="logo" src="../../../assets/logos/audi.png" alt="">
@@ -22,7 +29,7 @@
         class="card-text available">{{car.available ? 'Disponibile' : 'Non Disponibile'}}</li>
       </ul>
       <div class="card-body d-flex justify-content-around">
-        <button type="button" class="btn btn-primary">Mostra Dettagli</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['/detail', car.id]">Mostra Dettagli</button>
       </div>
     </div>
   </div>

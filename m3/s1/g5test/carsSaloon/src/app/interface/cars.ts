@@ -1,4 +1,5 @@
 export interface Cars {
+  id: string;
   brand: string;
   brandLogo: string;
   model: string;
