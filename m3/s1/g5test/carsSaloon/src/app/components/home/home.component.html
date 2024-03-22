@@ -1,0 +1,15 @@
+<div *ngFor="let car of chosenCars; let id = index" class="card" style="width: 18rem;">
+  <img src="{{car.modelImage}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{car.model}}</h5>
+    <p class="card-text">{{car.brand}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{car.year}}</li>
+    <li class="list-group-item">{{car.price}}</li>
+    <li class="list-group-item" class="card-text">{{car.available ? 'Disponibile' : 'Non Disponibile'}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Vedi Dettagli</a>
+  </div>
+</div>
