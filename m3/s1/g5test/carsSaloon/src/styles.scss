@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.logosDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-right: 20%;
+}
+.imgDiv {
+  margin-top: 3rem;
+}
+.logo {
+  width: 140px;
+}
+.logoFiat {
+  width: 90px;
+  margin: 0 50px;
+}
+.carCards {
+  width: 18rem;
+  color: white;
+}
+.list-group {
+  list-style-type: none;
+}
+.available {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
