@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { iTodolist } from '../../interface/todolist';
 import { TodolistService } from '../../service/todolist.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,8 @@ import { TodolistService } from '../../service/todolist.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  tasksArr!: iTodolist[]
-  @Input() tasks!:iTodolist
+  tasksArr: iTodolist[] = []
+    constructor(private taskSvc:TodolistService) {
+      this.tasksArr = this.taskSvc.getAllTasks()
+    }
 }

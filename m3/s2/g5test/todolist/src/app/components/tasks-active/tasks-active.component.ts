@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iTodolist } from '../../interface/todolist';
+import { TodolistService } from '../../service/todolist.service';
 
 @Component({
   selector: 'app-tasks-active',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './tasks-active.component.scss'
 })
 export class TasksActiveComponent {
-
+  tasksArr: iTodolist[] = []
+  constructor(private taskSvc:TodolistService) {
+    this.tasksArr = this.taskSvc.getActiveTasks()
+  }
 }
