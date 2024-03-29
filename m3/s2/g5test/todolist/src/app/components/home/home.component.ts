@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { iTodolist } from '../../interface/todolist';
 import { TodolistService } from '../../service/todolist.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',

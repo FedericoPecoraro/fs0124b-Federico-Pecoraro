@@ -925,13 +925,13 @@ export class TodolistService {
       return this.tasks.filter((task) => !task.completed);
     }
 
-   // getTasksByUserId():iTodolist[] {
-   //   return this.userSrv.getAllUsers.map(user => {
-   //     user.tasks = this.getAllUsers.filter(task => task.userId == user.id)
-   //     return user
-   //   })
-   // }
+    toggleCompleted(id: number):void {
+      this.tasks[id -1].completed = !this.tasks[id -1].completed
+    }
 
-}
+    getTasksByUserId(userId: number):iTodolist[] {
+      return this.tasks.filter((task) => task.userId == userId)
+      }
+    }
 
 

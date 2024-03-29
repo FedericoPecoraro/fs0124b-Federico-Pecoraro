@@ -1,0 +1,9 @@
+<div class="card" [ngClass]="{'bg-success-subtle': task.completed, 'bg-danger-subtle': !task.completed}" *ngIf="task">
+  <div class="card-header">
+    <input class="form-check-input check" type="checkbox" value="" id="flexCheckDefault" (change)="toggleCompleted(task.id)" [checked] = "task.completed">
+    <h5 class="card-title">{{task.todo}}</h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Assigned to: </p>
+  </div>
+</div>

@@ -1,8 +1,12 @@
-<div *ngFor="let tasks of tasksArr ; let id = index" class="mt-3">
-  <div class="card">
+<div class="container">
+  <h1>Uncompleted Tasks:</h1>
+</div>
+
+<div *ngFor="let task of tasksArr ; let i = index" class="mt-3">
+  <div class="card" [ngClass]="{'bg-success-subtle': task.completed, 'bg-danger-subtle': !task.completed}" >
     <div class="card-header">
-      <input class="form-check-input check" type="checkbox" value="" id="flexCheckDefault">
-      <h5 class="card-title">{{tasks.todo}}</h5>
+      <input class="form-check-input check" type="checkbox" value="" id="flexCheckDefault" (change)="toggleCompleted(task.id)" [checked] = "task.completed">
+      <h5 class="card-title">{{task.todo}}</h5>
     </div>
     <div class="card-body">
       <p class="card-text">Assigned to: </p>

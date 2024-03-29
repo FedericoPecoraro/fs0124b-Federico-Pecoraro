@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { UsersPageComponent } from './components/users-page/users-page.component';
 import { TasksActiveComponent } from './components/tasks-active/tasks-active.component';
 import { TasksInactiveComponent } from './components/tasks-inactive/tasks-inactive.component';
+import { TaskComponent } from './components/task/task.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TasksInactiveComponent } from './components/tasks-inactive/tasks-inacti
     HomeComponent,
     UsersPageComponent,
     TasksActiveComponent,
-    TasksInactiveComponent
+    TasksInactiveComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

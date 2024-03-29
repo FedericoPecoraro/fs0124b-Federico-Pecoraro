@@ -12,4 +12,8 @@ export class TasksActiveComponent {
   constructor(private taskSvc:TodolistService) {
     this.tasksArr = this.taskSvc.getActiveTasks()
   }
+
+  toggleCompleted(taskId: number) {
+    this.taskSvc.toggleCompleted(taskId)
+  }
 }
