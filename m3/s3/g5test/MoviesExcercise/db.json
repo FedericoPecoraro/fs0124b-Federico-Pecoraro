@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Freddie",
+      "lastName": "Mercury",
+      "email": "freddie.mercury@example.com",
+      "password": "queenrock1"
+    },
+    {
+      "id": 2,
+      "firstName": "David",
+      "lastName": "Bowie",
+      "email": "david.bowie@example.com",
+      "password": "ziggystardust2"
+    },
+    {
+      "id": 3,
+      "firstName": "Jimi",
+      "lastName": "Hendrix",
+      "email": "jimi.hendrix@example.com",
+      "password": "purplehaze3"
+    },
+    {
+      "email": "fred@pecoraro.it",
+      "password": "$2a$10$CZPEFhOdltJ5aUnjh0AszOofHqvykCSgLDi68RW2mwfmolIbtEAbC",
+      "firstName": "fred",
+      "lastName": "pecoraro",
+      "id": 4
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": "Drama",
+      "director": "Frank Darabont",
+      "plot": "Due uomini in una prigione di massima sicurezza sviluppano un'amicizia improbabile mentre cercano la redenzione interiore e la libertà."
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": "Crime",
+      "director": "Francis Ford Coppola",
+      "plot": "Il giovane erede di una famiglia criminale assume il controllo del loro impero mentre il potere e la violenza minacciano di distruggere tutto ciò che ha costruito."
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": "Action",
+      "director": "Christopher Nolan",
+      "plot": "Batman si trova ad affrontare il suo nemico più grande, il Joker, mentre cerca di salvare Gotham City da un'onda di crimine senza precedenti."
+    }
+  ],
+  "favorites": []
+}
