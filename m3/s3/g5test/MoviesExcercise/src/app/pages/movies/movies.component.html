@@ -1,1 +1,23 @@
-<p>movies works!</p>
+<div class="container m-4">
+  <h1>All Movies:</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-12 mb-5" *ngFor="let movie of moviesArr">
+    <div class="card">
+      <img [src]="movie.image" class="card-img-top" alt="image">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">{{movie.plot}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Year: {{movie.year}}</li>
+        <li class="list-group-item">Genre: {{movie.genre}}</li>
+        <li class="list-group-item">Director: {{movie.director}}</li>
+      </ul>
+      <div class="card-body">
+        <a routerLink="/favorites" class="card-link">Mi Piace</a>
+      </div>
+    </div>
+  </div>
+</div>

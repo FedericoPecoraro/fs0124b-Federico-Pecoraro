@@ -1,58 +1,235 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "Freddie",
-      "lastName": "Mercury",
-      "email": "freddie.mercury@example.com",
-      "password": "queenrock1"
-    },
-    {
-      "id": 2,
-      "firstName": "David",
-      "lastName": "Bowie",
-      "email": "david.bowie@example.com",
-      "password": "ziggystardust2"
-    },
-    {
-      "id": 3,
-      "firstName": "Jimi",
-      "lastName": "Hendrix",
-      "email": "jimi.hendrix@example.com",
-      "password": "purplehaze3"
-    },
-    {
       "email": "fred@pecoraro.it",
-      "password": "$2a$10$CZPEFhOdltJ5aUnjh0AszOofHqvykCSgLDi68RW2mwfmolIbtEAbC",
-      "firstName": "fred",
-      "lastName": "pecoraro",
+      "password": "$2a$10$wnfbTOriQusNeTAgxVJoreBM4Oj4IeDE8VESND0vr2TbS6Kvgf95G",
+      "firstName": "Fred",
+      "lastName": "Pecoraro",
+      "id": 1
+    },
+    {
+      "email": "remo@coca.it",
+      "password": "$2a$10$rtA6/ulGIkETtRulk.bgG.hyGUJrAx2jBcfW7mL9iZ/r1jsH5Dx52",
+      "firstName": "Remo",
+      "lastName": "Coca",
+      "id": 2
+    },
+    {
+      "email": "vlady@slav.it",
+      "password": "$2a$10$w2Nmtxtj3smCEhFR9yNs0e4H0bsT3tT/TzS6.ZPLuS2Q5IjE.ddMG",
+      "firstName": "Vladyslav",
+      "lastName": "Babydonthurtme",
+      "id": 3
+    },
+    {
+      "email": "martina@autore.it",
+      "password": "$2a$10$xd5jBbr4SSfDsu9n5Myffu/dyE21sQDckGg0kxcX.vux.dmSsgBt2",
+      "firstName": "Martina",
+      "lastName": "Autore",
       "id": 4
+    },
+    {
+      "email": "luca@valentinuzzi.it",
+      "password": "$2a$10$.Juojet8SWHSsZxNbgO5nehD4aftfjoWWT9h0PQ5JaUOKX4ux.zn2",
+      "firstName": "Luca",
+      "lastName": "Valentinuzzi",
+      "id": 5
+    },
+    {
+      "email": "luigi@grillo.it",
+      "password": "$2a$10$ziyr3hceOJ87fDlLOvETveZm4050DGgRjvOgDIr05FeICHHfUdf5W",
+      "firstName": "Luigi",
+      "lastName": "Grillo",
+      "id": 6
+    },
+    {
+      "email": "antonio@zaccaria.it",
+      "password": "$2a$10$AK8uQKuqH2hQcek16d/dROeIZiQ.8wReSky3OStFe43KnZ7YaFfhK",
+      "firstName": "Antonio",
+      "lastName": "Zaccaria",
+      "id": 7
     }
   ],
   "movies": [
     {
       "id": 1,
-      "title": "The Shawshank Redemption",
-      "year": 1994,
-      "genre": "Drama",
-      "director": "Frank Darabont",
-      "plot": "Due uomini in una prigione di massima sicurezza sviluppano un'amicizia improbabile mentre cercano la redenzione interiore e la libertà."
+      "title": "The Rocky Horror Picture Show",
+      "image": "https://picsum.photos/id/300/300/200",
+      "year": 1975,
+      "genre": "Musical",
+      "director": "Jim Sharman",
+      "plot": "Una giovane coppia finisce in una strana casa durante una tempesta e incontra il bizzarro Dr. Frank-N-Furter, il suo servitore Riff Raff e la sua creatura Rocky."
     },
     {
       "id": 2,
-      "title": "The Godfather",
-      "year": 1972,
-      "genre": "Crime",
-      "director": "Francis Ford Coppola",
-      "plot": "Il giovane erede di una famiglia criminale assume il controllo del loro impero mentre il potere e la violenza minacciano di distruggere tutto ciò che ha costruito."
+      "title": "A Clockwork Orange",
+      "image": "https://picsum.photos/id/301/300/200",
+      "year": 1971,
+      "genre": "Drama",
+      "director": "Stanley Kubrick",
+      "plot": "In una società distopica, il giovane Alex DeLarge si dedica alla violenza e alla devianza fino a quando viene sottoposto a un trattamento sperimentale per 'curarlo'."
     },
     {
       "id": 3,
-      "title": "The Dark Knight",
-      "year": 2008,
+      "title": "The Big Lebowski",
+      "image": "https://picsum.photos/id/335/300/200",
+      "year": 1998,
+      "genre": "Comedy",
+      "director": "Joel Coen, Ethan Coen",
+      "plot": "Un pigro maicon si ritrova coinvolto in una serie di eventi bizzarri dopo che due teppisti lo scambiano per un miliardario con lo stesso nome."
+    },
+    {
+      "id": 4,
+      "title": "Donnie Darko",
+      "image": "https://picsum.photos/id/330/300/200",
+      "year": 2001,
+      "genre": "Drama",
+      "director": "Richard Kelly",
+      "plot": "Un giovane disturbato vede visioni di un coniglio gigante che lo guida in un viaggio attraverso il tempo e lo spazio, mentre cerca di evitare una catastrofe imminente."
+    },
+    {
+      "id": 5,
+      "title": "Blade Runner",
+      "image": "https://picsum.photos/id/304/300/200",
+      "year": 1982,
+      "genre": "Sci-Fi",
+      "director": "Ridley Scott",
+      "plot": "In un futuro distopico, un cacciatore di taglie deve catturare e ritirare quattro replicanti ribelli prima che scatenino il caos nella società."
+    },
+    {
+      "id": 6,
+      "title": "Fight Club",
+      "image": "https://picsum.photos/id/305/300/200",
+      "year": 1999,
+      "genre": "Drama",
+      "director": "David Fincher",
+      "plot": "Un impiegato insoddisfatto e un venditore di sapone disilluso formano un club segreto dove gli uomini combattono per liberarsi dalla loro frustrazione."
+    },
+    {
+      "id": 7,
+      "title": "The Princess Bride",
+      "image": "https://picsum.photos/id/306/300/200",
+      "year": 1987,
+      "genre": "Adventure",
+      "director": "Rob Reiner",
+      "plot": "Un classico racconto di avventura e amore che segue il giovane Westley mentre cerca di salvare la sua amata Buttercup dai pericoli e dai cattivi."
+    },
+    {
+      "id": 8,
+      "title": "Monty Python and the Holy Grail",
+      "image": "https://picsum.photos/id/307/300/200",
+      "year": 1975,
+      "genre": "Comedy",
+      "director": "Terry Gilliam, Terry Jones",
+      "plot": "Un gruppo di cavalieri di Re Artù parte per una ricerca comica del Sacro Graal, affrontando ostacoli bizzarri e personaggi assurdi lungo il cammino."
+    },
+    {
+      "id": 9,
+      "title": "Office Space",
+      "image": "https://picsum.photos/id/308/300/200",
+      "year": 1999,
+      "genre": "Comedy",
+      "director": "Mike Judge",
+      "plot": "Un impiegato d'ufficio frustrato cerca di rovesciare la sua azienda in una serie di eventi comici dopo una sessione di ipnosi che lo libera dalla sua inibizione."
+    },
+    {
+      "id": 10,
+      "title": "Pulp Fiction",
+      "image": "https://picsum.photos/id/309/300/200",
+      "year": 1994,
+      "genre": "Crime",
+      "director": "Quentin Tarantino",
+      "plot": "Una serie di storie interconnesse si svolgono nella Los Angeles criminale, che coinvolge gangster, criminali, pugili e una coppia di ladri."
+    },
+    {
+      "id": 11,
+      "title": "The Room",
+      "image": "https://picsum.photos/id/310/300/200",
+      "year": 2003,
+      "genre": "Drama",
+      "director": "Tommy Wiseau",
+      "plot": "Un dramma romantico inspiegabilmente strano che segue le relazioni contorte e le sfide personali di un gruppo di personaggi eccentrici."
+    },
+    {
+      "id": 12,
+      "title": "Fear and Loathing in Las Vegas",
+      "image": "https://picsum.photos/id/311/300/200",
+      "year": 1998,
+      "genre": "Drama",
+      "director": "Terry Gilliam",
+      "plot": "Due amici drogati si imbarcano in un viaggio allucinante attraverso Las Vegas mentre cercano di trovare il senso della vita e l'America."
+    },
+    {
+      "id": 13,
+      "title": "The Departed",
+      "image": "https://picsum.photos/id/312/300/200",
+      "year": 2006,
+      "genre": "Crime",
+      "director": "Martin Scorsese",
+      "plot": "Un giovane poliziotto si infiltra in una gang criminale mentre un membro della gang si infiltra nella polizia, creando una rete di inganni e tradimenti."
+    },
+    {
+      "id": 14,
+      "title": "Eraserhead",
+      "image": "https://picsum.photos/id/313/300/200",
+      "year": 1977,
+      "genre": "Drama",
+      "director": "David Lynch",
+      "plot": "Un giovane uomo si ritrova a prendersi cura di un bambino deformato in un mondo strano e inquietante."
+    },
+    {
+      "id": 15,
+      "title": "Trainspotting",
+      "image": "https://picsum.photos/id/314/300/200",
+      "year": 1996,
+      "genre": "Drama",
+      "director": "Danny Boyle",
+      "plot": "Un gruppo di giovani tossicodipendenti vive nella città di Edimburgo, affrontando la vita quotidiana e cercando di sopravvivere nella loro tossicodipendenza."
+    },
+    {
+      "id": 16,
+      "title": "2001: A Space Odyssey",
+      "image": "https://picsum.photos/id/315/300/200",
+      "year": 1968,
+      "genre": "Sci-Fi",
+      "director": "Stanley Kubrick",
+      "plot": "Un viaggio epico attraverso lo spazio e il tempo, che esplora l'origine dell'umanità e il nostro destino nell'universo."
+    },
+    {
+      "id": 17,
+      "title": "The Blues Brothers",
+      "image": "https://picsum.photos/id/316/300/200",
+      "year": 1980,
+      "genre": "Comedy",
+      "director": "John Landis",
+      "plot": "Due fratelli si riuniscono per raccogliere fondi per salvare l'orfanotrofio in cui sono cresciuti, formando una band di blues e creando caos lungo la strada."
+    },
+    {
+      "id": 18,
+      "title": "The Warriors",
+      "image": "https://picsum.photos/id/317/300/200",
+      "year": 1979,
       "genre": "Action",
-      "director": "Christopher Nolan",
-      "plot": "Batman si trova ad affrontare il suo nemico più grande, il Joker, mentre cerca di salvare Gotham City da un'onda di crimine senza precedenti."
+      "director": "Walter Hill",
+      "plot": "Una gang di strada di New York deve attraversare il territorio di altre gang rivali per tornare a casa dopo che il loro leader è stato assassinato."
+    },
+    {
+      "id": 19,
+      "title": "This Is Spinal Tap",
+      "image": "https://picsum.photos/id/318/300/200",
+      "year": 1984,
+      "genre": "Comedy",
+      "director": "Rob Reiner",
+      "plot": "Un documentario falso segue una band rock fittizia, mostrando il loro successo e il loro fallimento mentre si esibiscono e navigano nelle dinamiche di gruppo."
+    },
+    {
+      "id": 20,
+      "title": "Clerks",
+      "image": "https://picsum.photos/id/319/300/200",
+      "year": 1994,
+      "genre": "Comedy",
+      "director": "Kevin Smith",
+      "plot": "Un commesso di un negozio e il suo amico passano una giornata lavorativa assurda tra clienti eccentrici e avventure improbabili."
     }
   ],
   "favorites": []
