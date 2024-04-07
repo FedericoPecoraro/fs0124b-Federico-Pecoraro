@@ -14,3 +14,12 @@
 .nav-link:active {
   transform:scale(1.2);
 }
+#brand {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-top: 5rem;
+  border-bottom-right-radius: 20px;
+  border-right: 0.1px solid white;
+  border-bottom: 1px solid white;
+}

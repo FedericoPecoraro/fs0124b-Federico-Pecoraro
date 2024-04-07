@@ -48,6 +48,13 @@
       "firstName": "Antonio",
       "lastName": "Zaccaria",
       "id": 7
+    },
+    {
+      "email": "chris@tripodi.it",
+      "password": "$2a$10$KOqhgHQPt/a4TTYNuOm/pOsnLBXb4BAlW0JZeIDtWGbu1FQ1ksyLa",
+      "firstName": "Christian",
+      "lastName": "Tripodi",
+      "id": 8
     }
   ],
   "movies": [

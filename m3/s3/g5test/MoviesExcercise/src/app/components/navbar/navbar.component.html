@@ -10,10 +10,10 @@
           <a class="nav-link" aria-current="page" routerLink="/">Home</a>
         </li>
         <li class="nav-item" *ngIf="isUserLoggedIn">
-          <a class="nav-link" aria-current="page" routerLink="/users">Users</a>
+          <a class="nav-link" aria-current="page" routerLink="/movies">Movies</a>
         </li>
         <li class="nav-item" *ngIf="isUserLoggedIn">
-          <a class="nav-link" aria-current="page" routerLink="/movies">Movies</a>
+          <a class="nav-link" aria-current="page" routerLink="/users">Users</a>
         </li>
         <li class="nav-item" *ngIf="isUserLoggedIn">
           <a class="nav-link" aria-current="page" routerLink="/favorites">Favorites</a>
@@ -37,5 +37,6 @@
   </div>
 </nav>
 
-
-
+<div class="container brandDiv">
+  <h1 id="brand">MOVIES-SPACE</h1>
+</div>
