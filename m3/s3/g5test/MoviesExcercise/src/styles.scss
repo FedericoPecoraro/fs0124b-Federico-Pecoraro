@@ -2,3 +2,8 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+  padding-top: 80px;
+  background-color: rgba(5, 135, 171, 0.621);
+}

@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6 col-12 mb-5" *ngFor="let movie of moviesArr">
+  <div class="col-xl-6 col-12 mb-5" *ngFor="let movie of moviesArr">
     <div class="card">
       <img [src]="movie.image" class="card-img-top" alt="image">
       <div class="card-body">
@@ -15,8 +15,13 @@
         <li class="list-group-item">Genre: {{movie.genre}}</li>
         <li class="list-group-item">Director: {{movie.director}}</li>
       </ul>
-      <div class="card-body">
-        <a routerLink="/favorites" class="card-link">Mi Piace</a>
+      <div class="buttons">
+        <div class="card-body">
+          <a routerLink="/favorites" class="card-link like">Mi piace</a>
+        </div>
+        <div class="card-body">
+          <a routerLink="/favorites" class="card-link dislike">Non mi piace</a>
+        </div>
       </div>
     </div>
   </div>

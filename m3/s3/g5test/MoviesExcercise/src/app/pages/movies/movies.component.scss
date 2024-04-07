@@ -1,3 +1,25 @@
 .card {
   width: 35rem;
 }
+.buttons {
+  display: flex;
+  margin-left: 6em;
+}
+.card-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 8px;
+}
+.like {
+  background-color: rgba(29, 194, 0, 0.632);
+  border: 1px solid rgb(32, 214, 0);
+}
+.dislike {
+  background-color: rgba(255, 0, 0, 0.523);
+  border: 1px solid red;
+}
+.card-link:hover{
+color: rgb(0, 0, 0);
+}
