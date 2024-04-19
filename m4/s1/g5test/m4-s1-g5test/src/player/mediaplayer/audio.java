@@ -14,6 +14,7 @@ public class audio extends playable implements playFunctions{
             for (int j = 0; j < this.getVolume(); j++) {
                 System.out.print("!");
             }
+
             System.out.println("");
         }
     }
