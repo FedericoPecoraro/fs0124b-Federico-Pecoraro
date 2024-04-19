@@ -1,30 +1,22 @@
 package player.mediaplayer;
 
 public class video extends playable implements viewFunctions {
-    private int brightness;
+    private int brightness = 5; //variabile di tipo int settata a 5
 
-    public video(String title, int duration) {
+    public video(String title, int duration) { //costruttore che accetta due parametri, titolo e durata
         super.setTitle(title);
         super.setDuration(duration);
-        this.setVolume(50);
-        this.setBrightness(50);
     }
 
     public int getBrightness() {
-        return brightness;
-    }
-
-    public void setBrightness(int brightness) {
-        this.brightness = brightness;
+        return brightness; //restituisce il valore della luminosità
     }
 
     @Override
-    public void play() {
+    public void play() { //funzione che riproduce il video
 
         for (int i = 0; i < this.getDuration(); i++) {
-
             System.out.print(this.getTitle() + " - ");
-
             for (int j = 0; j < this.getVolume(); j++) {
                 System.out.print("!");
             }
@@ -37,8 +29,8 @@ public class video extends playable implements viewFunctions {
         }
     }
     @Override
-    public void brightnessUp() {
-        if (this.getBrightness() < 100) {
+    public void brightnessUp() { //funzione che aumenta la luminosità
+        if (this.getBrightness() < 10) {
             brightness++;
         } else {
             System.out.println("Luminosità massima");
@@ -46,7 +38,7 @@ public class video extends playable implements viewFunctions {
     }
 
     @Override
-    public void brightnessDown() {
+    public void brightnessDown() { //funzione che diminuisce la luminosità
         if (this.getBrightness() > 0) {
             brightness--;
         } else {
