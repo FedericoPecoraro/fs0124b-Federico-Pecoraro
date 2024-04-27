@@ -5,13 +5,9 @@ public class Book extends Publication{
     private String genre;
 
     public Book(Long ISBN, String title, int publicYear, int pagesNumber, String author, String genre) {
+        super(ISBN, title, publicYear, pagesNumber);
         this.author = author;
         this.genre = genre;
-
-        super.setISBN(ISBN);
-        super.setTitle(title);
-        super.setPublicYear(publicYear);
-        super.setPagesNumber(pagesNumber);
     }
 
     public String getAuthor() {
@@ -27,4 +23,10 @@ public class Book extends Publication{
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" + "autore='" + author + '\'' + ", genere='" + genre + '\'' + '}';
+    }
 }
+

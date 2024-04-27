@@ -4,11 +4,8 @@ public class Magazine extends Publication {
     private Frequency frequency;
 
     public Magazine(Long ISBN, String title, int publicYear, int pagesNumber, Frequency frequency) {
+        super(ISBN, title, publicYear, pagesNumber);
         this.frequency = frequency;
-        super.setISBN(ISBN);
-        super.setTitle(title);
-        super.setPublicYear(publicYear);
-        super.setPagesNumber(pagesNumber);
     }
 
     public Frequency getFrequency() {
@@ -16,5 +13,10 @@ public class Magazine extends Publication {
     }
     public void setFrequency(Frequency frequency) {
         this.frequency = frequency;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Rivista (" + "frequenza=" + frequency + ')';
     }
 }

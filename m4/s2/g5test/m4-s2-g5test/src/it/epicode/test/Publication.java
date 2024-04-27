@@ -6,7 +6,12 @@ public abstract class Publication {
     private int publicYear;
     private int pagesNumber;
 
-    public Publication() {}
+    public Publication(Long ISBN, String title, int publicYear, int pagesNumber) {
+        this.ISBN = ISBN;
+        this.title = title;
+        this.publicYear = publicYear;
+        this.pagesNumber = pagesNumber;
+    }
 
     public Long getISBN() {
         return ISBN;
@@ -35,5 +40,4 @@ public abstract class Publication {
     public void setPagesNumber(int pagesNumber) {
         this.pagesNumber = pagesNumber;
     }
-
 }
