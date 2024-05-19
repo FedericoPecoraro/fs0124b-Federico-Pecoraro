@@ -7,11 +7,11 @@ import com.epicode.m5s1g5test.repository.ReservationRepo;
 import com.epicode.m5s1g5test.repository.UserRepo;
 import com.epicode.m5s1g5test.repository.WorkstationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.time.LocalDate;
+import java.util.List;
 
 @org.springframework.stereotype.Service
-public class Service {
+public class ReservationService {
 
     @Autowired
     private ReservationRepo reservationRepo;
@@ -31,5 +31,16 @@ public class Service {
         Reservation reservation = new Reservation();
 
         return (ReservationRepo) reservationRepo.save(reservation);
+    }
+    public boolean isUserAlreadyReserved(User user, LocalDate dateReservation){
+        return reservationRepo.existsByUserAndDateReservation(user, dateReservation);
+    }
+
+    public boolean isWorkstationAvailable(Workstation workstation, LocalDate dateReservation){
+        return !reservationRepo.existsByWorkstationAndDateReservation(workstation, dateReservation);
+    }
+
+    public List<Reservation> reservationsByUserAndDate(User user, LocalDate dateReservation){
+        return reservationRepo.findByUserAndDate(user, dateReservation);
     }
 }
