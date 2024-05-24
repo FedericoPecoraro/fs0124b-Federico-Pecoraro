@@ -1,4 +1,4 @@
-package it.epicode.g5test.entities;
+package it.epicode.entities;
 
 public enum TipoDispositivo {
     SMARTPHONE, TABLET, LAPTOP

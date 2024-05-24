@@ -1,4 +1,4 @@
-package it.epicode.g5test.entities;
+package it.epicode.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,11 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Table(name = "dispositivo")
-@Entity
 @Builder(setterPrefix = "with")
 public class Dispositivo extends BaseEntity {
     @ManyToOne

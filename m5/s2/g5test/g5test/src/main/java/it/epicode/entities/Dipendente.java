@@ -1,4 +1,4 @@
-package it.epicode.g5test.entities;
+package it.epicode.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,11 +10,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.util.List;
 
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Table(name = "dipendente")
-@Entity
 @Builder(setterPrefix = "with")
 public class Dipendente {
     @Column (name = "nome", nullable = false)
