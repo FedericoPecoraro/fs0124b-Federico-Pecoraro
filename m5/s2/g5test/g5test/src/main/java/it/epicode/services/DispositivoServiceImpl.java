@@ -2,6 +2,7 @@ package it.epicode.services;
 
 import it.epicode.entities.Dispositivo;
 import it.epicode.entities.StatoDispositivo;
+import it.epicode.repositories.DipendenteRepo;
 import it.epicode.repositories.DispositivoRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,8 @@ import java.util.Optional;
 public class DispositivoServiceImpl implements DispositivoService{
     @Autowired
     DispositivoRepo dispositivi;
+    @Autowired
+    DipendenteRepo dipendenti;
 
     @Override
     public List<Dispositivo> getDispositivi() {

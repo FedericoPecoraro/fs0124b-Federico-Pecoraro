@@ -16,7 +16,7 @@ import java.util.List;
 @Data
 @Table(name = "dipendente")
 @Builder(setterPrefix = "with")
-public class Dipendente {
+public class Dipendente extends BaseEntity{
     @Column (name = "nome", nullable = false)
     private String nome;
     @Column (name = "nome_utente", nullable = false)
