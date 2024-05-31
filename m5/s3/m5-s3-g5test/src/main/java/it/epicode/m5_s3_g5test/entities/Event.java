@@ -10,7 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder(setterPrefix = "with")
 
-public class Events extends EntityBase {
+public class Event extends EntityBase {
     private String titolo;
     private String descrizione;
     private String data;

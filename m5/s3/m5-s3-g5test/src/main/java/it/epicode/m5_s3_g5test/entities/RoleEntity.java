@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.*;
+import org.apache.catalina.User;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,6 @@ public class RoleEntity extends EntityBase {
     private String nome;
 
     @ManyToMany(mappedBy = "roles")
-    private final List<Utente> users = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
 
 }

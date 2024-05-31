@@ -1,10 +1,8 @@
 package it.epicode.m5_s3_g5test.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +10,10 @@ import java.util.List;
 @Data
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder(setterPrefix = "with")
 
-public class UserEntity extends EntityBase {
+public class User extends EntityBase {
     @Column(length = 125, nullable = false)
     private String email;
     @Column(length = 125, unique = true, nullable = false)
